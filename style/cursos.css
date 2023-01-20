@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-header: #2E948A;
+    --color-nav: #FDFDFD;
+    --color-bg: #fff;
+    --color-text: #FF4081;
+    --color-bg-cursos: #F6F6F6;
+    --color-title-about: #009688;
+}
+html{
+    width: 100%;
+}
+header{
+    background-color: var(--color-header);
+    color: var(--color-nav);
+    width: 100%;
+    box-shadow: 2px 0px 14px 0px rgba(0,0,0,0.75);
+}
+body{
+    background-color: var(--color-bg);
+}
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px
+}
+.nav-links a{
+    color: var(--color-nav);
+}
+.nav-links a:hover{
+    border-bottom: 1px solid var(--color-bg);
+}
+.nav-itens{
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    margin-right: 20px;
+    
+}
+.logo img{
+    width: 130px;
+}
+
+.container-curso {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.intro-texto {
+    padding: 2rem 0;
+}
+
+.intro-texto h2 {
+    color: #ff4081;
+    margin: 0 0 2rem 0;
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+.intro-logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.intro-logo img {
+    margin: 0 5rem;
+    height: 72vh;
+}
+
+.aulas {
+    position: relative;
+    width: 100%;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.aulas-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.aulas-item img {
+    width: 17rem;
+    margin: 2rem;
+    border-radius: 10rem;
+}
+
+.aulas-texto h2 {
+    font-size: 2.18rem;
+    font-weight: 700;
+    color: #ff4081;
+    margin-bottom: 3rem;
+}
+.container-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container-text h2{
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 3rem;
+    justify-content: center;    
+}
+.container-text p{
+    color: rgb(92, 92, 92);
+    text-align: center;
+}
+
+
+.btn-aula{
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #2E948A;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+}
+.btn-aula a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Footer*/
+.footer-container {
+    margin-top: 50px;
+    background-color: var(--color-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-left img{
+    width: 200px;
+}
+
+.footer-center {
+    width: 50%;
+    text-align: center;
+}
+.footer-center a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--color-bg);
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 200px; 
+}
+.footer-right a {
+    margin: 10px 15px;
+    text-decoration: none;
+    color: var(--color-bg);
+    border: 1px solid var(--color-bg);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 20px;
+}
+.divisao{
+    color: #2E948A;
+    background-color: #2E948A;
+    height: 2px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 600px){
+    .footer-left{
+        display: none;
+    }
+    .footer-right a{
+        margin: 5px;
+    }
+    .footer-container{
+        padding: 10px;
+    }
+    .container-text{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-text h2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 550px){
+    .aulas-item{
+        display: block;
+    }
+}
+@media (max-width: 446px){
+    .aulas-item img{
+        width: 200px;
+    }
+    .aulas-texto{
+        width: 200px;
+    }
+    .logo{
+        display: none;
+    }
+}

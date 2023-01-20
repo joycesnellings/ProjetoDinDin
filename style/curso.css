@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-header: #2E948A;
+    --color-nav: #FDFDFD;
+    --color-bg: #fff;
+    --color-text: #FF4081;
+    --color-bg-cursos: #F6F6F6;
+    --color-title-about: #009688;
+}
+header{
+    background-color: var(--color-header);
+    color: var(--color-nav);
+    width: 100%;
+    box-shadow: 2px 0px 14px 0px rgba(0,0,0,0.75);
+}
+body{
+    background-color: var(--color-bg);
+}
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px
+}
+.nav-links a{
+    color: var(--color-nav);
+}
+.nav-links a:hover{
+    border-bottom: 1px solid var(--color-bg);
+}
+.nav-itens{
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    margin-right: 20px;
+    
+}
+.logo img{
+    width: 130px;
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-curso {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 3rem auto;
+}
+.intro-texto h2{
+    justify-content: left;
+}
+.intro-texto p{
+    margin: 15px;
+    align-items: center;
+    text-align: left;
+}
+.intro-texto {
+    width: 50%;
+    text-align: left;
+    justify-content: left;
+
+}
+.intro-texto h2 {
+    padding: 1rem;
+    color: #ff4081;
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+.intro-logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.intro-logo img {
+    margin: 0 auto;
+    max-width: 350px;
+}
+.aulas {
+    width: 100%;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.aulas hr {
+    width: 80vw;
+}
+.aulas-item {
+    width: 70vw;
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    margin: 2rem;
+}
+.aulas-item img {
+    width: 17rem;
+    margin: 2rem;
+    border-radius: 10rem;
+}
+
+.aulas-texto h2 {
+    font-size: 2.18rem;
+    font-weight: 700;
+    color: #ff4081;
+    margin-bottom: 3rem;
+}
+.footer-container {
+    margin-top: 50px;
+    background-color: var(--color-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-left img{
+    width: 200px;
+}
+
+.footer-center {
+    width: 50%;
+    text-align: center;
+}
+.footer-center a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--color-bg);
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 200px; 
+}
+.footer-right a {
+    margin: 10px 15px;
+    text-decoration: none;
+    color: var(--color-bg);
+    border: 1px solid var(--color-bg);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 20px;
+
+}
+.footer-right a:hover{
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(180, 243, 216, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+@media (max-width: 700px){
+    .container-curso{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto auto;
+    }
+    .intro-texto{
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 600px){
+    .intro-texto h2 {
+        font-size: 1.5em;
+    }
+    .aulas-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .aulas-item img{
+        max-width: 17rem;
+    }
+    .intro-logo img{
+        width: 200px;
+    }
+}
+@media (max-width: 450px){
+    .intro-logo img{
+        display: none;
+    }
+    .aulas-item img{
+        max-width: 14rem;
+        margin: 10px 0;
+    }
+    .aulas-item{
+        margin: 0;
+    }
+    header{
+        width: 100vw;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar{
+        padding: 5px 6px;
+    }
+}
+@media (max-width: 440px){
+    .aulas-item img{
+        display: none;
+    }
+    .footer-left{
+        display: none;
+    }
+}
