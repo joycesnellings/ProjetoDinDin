@@ -1,6 +1,6 @@
 ![header](https://user-images.githubusercontent.com/64026100/213587979-4301054f-744a-4226-8f64-dc9618386ebc.png)
 
-> Status: Developing 🚧
+> Github Pages - https://joycesnellings.github.io/ProjetoDinDin/
 
 ### É uma aplicação web produzida por Leon Krenak e Joyce Snellings, é uma aplicação de ensino sobre educação financeira! Atividade proposta pela GamaAcademy.
 
